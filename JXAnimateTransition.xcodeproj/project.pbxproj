@@ -14,6 +14,10 @@
 		5D0C74FB1B25AC83001D33A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D0C74FA1B25AC83001D33A0 /* Images.xcassets */; };
 		5D0C74FE1B25AC83001D33A0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D0C74FC1B25AC83001D33A0 /* LaunchScreen.xib */; };
 		5D0C750A1B25AC83001D33A0 /* JXAnimateTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C75091B25AC83001D33A0 /* JXAnimateTransitionTests.m */; };
+		5D0C75161B25AD15001D33A0 /* JXPresentAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C75151B25AD15001D33A0 /* JXPresentAnimation.m */; };
+		5D0C75191B25AF16001D33A0 /* JXDismissAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C75181B25AF16001D33A0 /* JXDismissAnimation.m */; };
+		5D0C751C1B25B292001D33A0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C751B1B25B292001D33A0 /* SecondViewController.m */; };
+		5D0C751F1B25BDF7001D33A0 /* JXInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C751E1B25BDF7001D33A0 /* JXInteractiveTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		5D0C75031B25AC83001D33A0 /* JXAnimateTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JXAnimateTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D0C75081B25AC83001D33A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D0C75091B25AC83001D33A0 /* JXAnimateTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JXAnimateTransitionTests.m; sourceTree = "<group>"; };
+		5D0C75141B25AD15001D33A0 /* JXPresentAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXPresentAnimation.h; sourceTree = "<group>"; };
+		5D0C75151B25AD15001D33A0 /* JXPresentAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXPresentAnimation.m; sourceTree = "<group>"; };
+		5D0C75171B25AF16001D33A0 /* JXDismissAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXDismissAnimation.h; sourceTree = "<group>"; };
+		5D0C75181B25AF16001D33A0 /* JXDismissAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXDismissAnimation.m; sourceTree = "<group>"; };
+		5D0C751A1B25B292001D33A0 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		5D0C751B1B25B292001D33A0 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		5D0C751D1B25BDF7001D33A0 /* JXInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXInteractiveTransition.h; sourceTree = "<group>"; };
+		5D0C751E1B25BDF7001D33A0 /* JXInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXInteractiveTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +93,13 @@
 		5D0C74EC1B25AC83001D33A0 /* JXAnimateTransition */ = {
 			isa = PBXGroup;
 			children = (
+				5D0C75131B25ACE7001D33A0 /* Animation */,
 				5D0C74F11B25AC83001D33A0 /* AppDelegate.h */,
 				5D0C74F21B25AC83001D33A0 /* AppDelegate.m */,
 				5D0C74F41B25AC83001D33A0 /* ViewController.h */,
 				5D0C74F51B25AC83001D33A0 /* ViewController.m */,
+				5D0C751A1B25B292001D33A0 /* SecondViewController.h */,
+				5D0C751B1B25B292001D33A0 /* SecondViewController.m */,
 				5D0C74F71B25AC83001D33A0 /* Main.storyboard */,
 				5D0C74FA1B25AC83001D33A0 /* Images.xcassets */,
 				5D0C74FC1B25AC83001D33A0 /* LaunchScreen.xib */,
@@ -117,6 +132,19 @@
 				5D0C75081B25AC83001D33A0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D0C75131B25ACE7001D33A0 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				5D0C75141B25AD15001D33A0 /* JXPresentAnimation.h */,
+				5D0C75151B25AD15001D33A0 /* JXPresentAnimation.m */,
+				5D0C75171B25AF16001D33A0 /* JXDismissAnimation.h */,
+				5D0C75181B25AF16001D33A0 /* JXDismissAnimation.m */,
+				5D0C751D1B25BDF7001D33A0 /* JXInteractiveTransition.h */,
+				5D0C751E1B25BDF7001D33A0 /* JXInteractiveTransition.m */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +247,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D0C751C1B25B292001D33A0 /* SecondViewController.m in Sources */,
 				5D0C74F61B25AC83001D33A0 /* ViewController.m in Sources */,
+				5D0C75191B25AF16001D33A0 /* JXDismissAnimation.m in Sources */,
 				5D0C74F31B25AC83001D33A0 /* AppDelegate.m in Sources */,
+				5D0C751F1B25BDF7001D33A0 /* JXInteractiveTransition.m in Sources */,
+				5D0C75161B25AD15001D33A0 /* JXPresentAnimation.m in Sources */,
 				5D0C74F01B25AC83001D33A0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SecondViewController.h
 //  JXAnimateTransition
 //
 //  Created by JackXu on 15/6/8.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UIViewControllerTransitioningDelegate>
+@interface SecondViewController : UIViewController
 
+@property(nonatomic,assign)id<UIViewControllerTransitioningDelegate> mainVC;
 
 @end
-
